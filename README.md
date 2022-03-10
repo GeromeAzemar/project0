@@ -1,2 +1,3 @@
 # project0
-First project
+
+This is an introduction to our first project 
