@@ -30,7 +30,7 @@ namespace BankingAPPConsole_GeromeAzemar
                             System.Console.Write("Enter Account holder name:  ");
                             String name = System.Console.ReadLine();
                             accObj.setAccName(name);
-                            System.Console.Write("What type of account does the holder want to open\n1. Savings\t2. Checking\t3. Merchant: ");
+                            System.Console.Write("What type of account does the holder want to open\n1. Savings\t2. Checking\t3. Merchant:\t4. Get Account Details\t0. Exit ");
                                 int AccountChoice = Convert.ToInt32(System.Console.ReadLine());
                                 #region Account Coice
                                     switch(AccountChoice){
@@ -72,6 +72,8 @@ namespace BankingAPPConsole_GeromeAzemar
                             getBalance = accObj.getAccBalance();
                             System.Console.WriteLine("Your current Balance is " + getBalance);
                             break;
+
+                            
 
                             default:
                             active = false;
